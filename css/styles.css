@@ -1,0 +1,36 @@
+.jumbotron {
+  background-image: url(../img/dice.jpg);
+  height: 50vh;
+  width: 100vw;
+}
+
+h2 {
+  text-align: center;
+  color: purple;
+}
+
+.p1 {
+  text-align: right;
+}
+
+.img1 {
+  height: 150px;
+  width: 150px;
+  float: right;
+}
+
+.img2 {
+  height: 150px;
+  width: 150px;
+}
+
+.dice {
+  float: left;
+  width: 32px;
+  background: #F5F5F5;
+  border: #999 1px solid;
+  padding: 10px;
+  font-size: 24px;
+  text-align: center;
+  margin: 10px;
+}

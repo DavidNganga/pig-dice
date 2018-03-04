@@ -1,5 +1,5 @@
 function rollDice() {
-	var total = 0;
+	var total = 1;
 	var roll = Math.floor(Math.random() * 6) + 1;
 	if (roll != 1) {
 		total = total + roll;
@@ -17,16 +17,14 @@ function rollDice() {
 
 }
 $(document).ready(function() {
-			$("#roll1").click(function(e) {
-				e.preventDefault();
-				console.log("roll1");
-				$(".result").text(rollDice());
-
-				$("#roll2").click(function(e) {
-					e.preventDefault();
-					console.log("roll1");
-					$(".Result").text(rollDice());
-
-
-				});
-			})
+	$("#roll1").click(function(e) {
+		e.preventDefault();
+		console.log("roll1");
+		$(".result").text(rollDice());
+	});
+	$("#roll2").click(function(e) {
+		e.preventDefault();
+		console.log("roll1");
+		$(".Result").text(rollDice());
+	});
+});

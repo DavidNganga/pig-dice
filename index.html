@@ -12,28 +12,50 @@
 </head>
 
 <body>
-
-
   <header class="jumbotron">
-
   </header>
-
-  <h2>LET'S ROLL!</h2>
-  <div class="row">
-    <div class="col-md-6">
-      <img class="img1" src="img/batman-ben-affleck.jpg">
-      <h3 class="p1">Player 1</h3>
+  <h2><strong>LET'S ROLL!</strong></h2>
+  <h2>PLAYERS</h2>
+  <div id="blanks">
+    <div class="row">
+      <div class="col-md-6">
+        <p>Player 1</p>
+      </div>
+      <div class="col-md-6">
+        <p>Player2</p>
+      </div>
     </div>
-    <div class="col-md-6">
 
-      <img class="img2" src="img/THE-JOKER.jpg">
-      <h3>Player 2</h3>
+    <p><span class="person1"></span></p>
+
+    <div class="row">
+      <div class="col-sm-4"> </div>
+      <div class="col-sm-4">
+        <h2 class="turn-score"></h2> </div>
+      <div class="col-sm-4"> </div>
     </div>
+    <!--   score row end-->
+    <!--        roll and hold row-->
+    <div class="row roll-hold ">
+      <div class="col-sm-4">
+        <button onclick="rollDice" class="btn btn-roll " id="roll1">Roll</button>
+        <h2 id="status"></h2>
+        <li class='total'></li>
+        <button class="btn btn-hold" id="hold1">Hold</button>..>
+        <li class='res'></li>
+      </div>
+      <div class="col-sm-4"> </div>
+      <div class="col-sm-4">
+        <button onclick="rollDice" class="btn btn-roll" id="roll2">Roll</button>
+        <h2 id="status2"></h2>
+        <li class='res'></li>
+        <button class="btn btn-hold" id="hold2">Hold</button>
+        <li class='res'></li>
+      </div>
+    </div>
+    <!--        roll and hold row end -->
   </div>
-  <div id="die1" class="dice">0</div>
-  <div id="die2" class="dice">0</div>
-  <button onclick="rollDice()" type="button" name="Ha Ha Ha"></button>
-  <h2 id="status" style="clear:left;"></h2>
+
 </body>
 
 </html>
